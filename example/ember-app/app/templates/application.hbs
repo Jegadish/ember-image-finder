@@ -1,0 +1,10 @@
+<div class="hero-section">
+  <img src="../images/hero.jpg" alt="Hero image">
+  <img src="../images/logo.svg" alt="Logo">
+</div>
+
+<div class="gallery">
+  {{#each model.images as |image|}}
+    <img src="../images/gallery/{{image.name}}" alt="{{image.description}}">
+  {{/each}}
+</div>
